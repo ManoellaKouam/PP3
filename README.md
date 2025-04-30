@@ -112,10 +112,23 @@ For more detailed information on SVG structure and elements, you can refer to th
 **Install vim on your local machine and open a new file, called `example.svg`. Write the SVG-code to include a straight line, a circle and a rectangle. When done, use your browser to open the file.**
 
 <details>
-    <summary>Your SVG Code</summary>
-    <code>
-    ......
-    </code>
+     <summary> your SVG code </summary>
+</details>
+
+ ```xml
+ <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+version="1.1"
+with="800mm" height="600mm"
+viewBox="-400 -300 800 600">
+<!-- straight line -->
+<line x1="10" y1="10" x2="190" y2="10" stroke="black" stroke-width="2" />
+<!-- Circle -->
+<circle cx="100" cy="60" r="30" fill="red" />
+<!-- Rectangle blue -->
+<rect x="10" y="10" width="100" height="50" fill="blue" />
+</svg>
+```
 </details>
 
 ### Task 2: Markdown
@@ -126,19 +139,28 @@ It is an easy and lightweight syntax, to instruct a display software to render t
 
 <details>
     <summary>How does prepending hashes (<code>#</code>) affect the display?</summary>
-    ......
+   Je mehr Hastags (#), desto kleiner die Überschrift. Es gibt 6 verschiedene Stufen der Schriftgröße, die von h1 bis h6 (von groß bis klein) reichen.
 </details>
 <details>
     <summary>How do you mark italic or bold font?</summary>
-    <code>
-    ......
-    </code>
+ <summary><code>**bold**</code> oder <code>__bold__</code></summary> 
+ <summary><code>*italic*</code> oder <code>_italic_</code></summary>
 </details>
 <details>
     <summary>Which different ways are there to generate listings and tables?</summary>
-    <code>
-    ......
-    </code>
+    
+    hier ist eine Tabelle 
+        |  name | vorname | wohnort |
+        |-------|---------|---------|
+        |mueller| maria   | Essen   |
+        |kouam  | manoella| Bochum  |
+
+     hier ist eine liste 
+     *liste1
+      -element1
+      -element2
+      -element3
+    
 </details>
 
 ### Task 3: LaTeX
